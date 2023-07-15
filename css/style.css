@@ -1,0 +1,183 @@
+:root {
+    --light-color: #f1f1f1;
+    --dark-color: #333;
+    --primary-color: #f7b731;
+    --blue-color: #3867d6;
+}
+
+body {
+    background-color: #fff;
+}
+
+.btn {
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #fff;
+}
+
+.nav-item .nav-link:hover{
+    background: #333;
+    color: #fff;
+}
+
+.navbar-scroll {
+    position: fixed;
+    top: -100px;
+    transition: top 0.3s;
+  }
+  
+  .navbar-scroll.show {
+    top: 0;
+  }
+
+/*-------- header section ---------*/
+.carousel-item .carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 25, 45, 0.7);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel-item img {
+    height: 90vh;
+
+}
+
+/*-----booking section ----- */
+.booking {
+    position: relative;
+    margin-top: -80px !important;
+    z-index: 1;
+}
+
+
+/*------about section------*/
+
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    background: var(--primary-color);
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    left: -60px;
+    margin-top: -1px;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    background: var(--primary-color);
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    right: -60px;
+    margin-top: -1px;
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+
+/* ----------- service section --------*/
+
+.service-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    padding: 20px;
+    background: #fff;
+    transition: 0.5ss;
+    text-decoration: none;
+}
+
+.service-item:hover {
+    background: var(--primary-color);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 30px auto;
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.service-item i,
+.service-item h5,
+.service-item p {
+    transition: 0.5s;
+}
+
+.service-item i:hover,
+.service-item h5:hover,
+.service-item p:hover {
+    color: #fff;
+}
+
+
+/*---------offers----------*/
+
+.section-offers .off-label-no {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #9c0a1a;
+}
+
+
+.rating-stars ul {
+    list-style: none;
+}
+
+li.star.selected {
+    color: #f7b731;
+}
+
+.offer-img {
+    max-height: 180px;
+    
+}
+
+.offer-img:hover {
+    cursor: pointer;
+    scale: 110%;
+    transition-duration: 0.5s;
+}
+
+.card-title:hover {
+    cursor: pointer;
+    color: var(--blue-color);
+}
+
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
